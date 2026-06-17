@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>See 'N' Say Storymaker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="toy">
+    <section class="left-panel">
+      <h1>See 'N' Say Storymaker</h1>
+      <p class="instructions">
+        Click each numbered button to cycle through the word choices. Click Listen to build the story.
+      </p>
+
+      <div class="word-columns">
+        <button id="buttonOne" class="word-button purple" type="button">1. The turkey</button>
+        <button id="buttonTwo" class="word-button blue" type="button">2. sat on</button>
+        <button id="buttonThree" class="word-button green" type="button">3. a funny</button>
+        <button id="buttonFour" class="word-button orange" type="button">4. goat</button>
+        <button id="buttonFive" class="word-button pink" type="button">5. on the moon</button>
+      </div>
+    </section>
+
+    <section class="right-panel">
+      <div class="top-circles" aria-hidden="true">
+        <span class="circle purple-circle"></span>
+        <span class="circle blue-circle"></span>
+        <span class="circle green-circle"></span>
+        <span class="circle orange-circle"></span>
+        <span class="circle pink-circle"></span>
+      </div>
+
+      <div class="character" aria-hidden="true">🐛📖</div>
+
+      <div class="speaker" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="controls">
+        <button id="listenButton" class="round-button listen" type="button">Listen</button>
+        <button id="randomButton" class="round-button random" type="button">Random</button>
+        <button id="resetButton" class="reset-button" type="button">Reset</button>
+      </div>
+
+      <p id="storyOutput" class="story-output">Your finished story will appear here.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

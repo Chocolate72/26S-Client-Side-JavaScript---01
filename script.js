@@ -124,3 +124,37 @@ function resetStory() {
   updateButtons();
   storyOutput.textContent = "Your finished story will appear here.";
 }
+
+// Add event listeners to cycle through each story part.
+buttonOne.addEventListener("click", function () {
+  partOneIndex = getNextIndex(partOneIndex, partOneWords.length);
+  updateButtons();
+});
+
+buttonTwo.addEventListener("click", function () {
+  partTwoIndex = getNextIndex(partTwoIndex, partTwoWords.length);
+  updateButtons();
+});
+
+buttonThree.addEventListener("click", function () {
+  partThreeIndex = getNextIndex(partThreeIndex, partThreeWords.length);
+  updateButtons();
+});
+
+buttonFour.addEventListener("click", function () {
+  partFourIndex = getNextIndex(partFourIndex, partFourWords.length);
+  updateButtons();
+});
+
+buttonFive.addEventListener("click", function () {
+  partFiveIndex = getNextIndex(partFiveIndex, partFiveWords.length);
+  updateButtons();
+});
+
+// Add event listeners to the control buttons.
+listenButton.addEventListener("click", buildStory);
+randomButton.addEventListener("click", buildRandomStory);
+resetButton.addEventListener("click", resetStory);
+
+// Show the default word choices when the page loads.
+updateButtons();

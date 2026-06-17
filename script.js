@@ -95,3 +95,32 @@ function buildStory() {
 
   storyOutput.textContent = story;
 }
+
+// This function returns a random number that can be used as an array index.
+function getRandomIndex(arrayLength) {
+  return Math.floor(Math.random() * arrayLength);
+}
+
+// This function creates a random story by choosing random indexes.
+function buildRandomStory() {
+  partOneIndex = getRandomIndex(partOneWords.length);
+  partTwoIndex = getRandomIndex(partTwoWords.length);
+  partThreeIndex = getRandomIndex(partThreeWords.length);
+  partFourIndex = getRandomIndex(partFourWords.length);
+  partFiveIndex = getRandomIndex(partFiveWords.length);
+
+  updateButtons();
+  buildStory();
+}
+
+// This function resets the story maker to its starting choices.
+function resetStory() {
+  partOneIndex = 0;
+  partTwoIndex = 0;
+  partThreeIndex = 0;
+  partFourIndex = 0;
+  partFiveIndex = 0;
+
+  updateButtons();
+  storyOutput.textContent = "Your finished story will appear here.";
+}

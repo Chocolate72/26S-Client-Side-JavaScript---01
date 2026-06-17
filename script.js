@@ -64,3 +64,23 @@ var listenButton = document.getElementById("listenButton");
 var randomButton = document.getElementById("randomButton");
 var resetButton = document.getElementById("resetButton");
 var storyOutput = document.getElementById("storyOutput");
+
+// This function displays the current choices on the five buttons.
+function updateButtons() {
+  buttonOne.textContent = "1. " + partOneWords[partOneIndex];
+  buttonTwo.textContent = "2. " + partTwoWords[partTwoIndex];
+  buttonThree.textContent = "3. " + partThreeWords[partThreeIndex];
+  buttonFour.textContent = "4. " + partFourWords[partFourIndex];
+  buttonFive.textContent = "5. " + partFiveWords[partFiveIndex];
+}
+
+// This function moves to the next array item and loops back to zero.
+function getNextIndex(currentIndex, arrayLength) {
+  currentIndex = currentIndex + 1;
+
+  if (currentIndex >= arrayLength) {
+    currentIndex = 0;
+  }
+
+  return currentIndex;
+}

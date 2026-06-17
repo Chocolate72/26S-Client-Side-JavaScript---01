@@ -46,3 +46,21 @@ var partFiveWords = [
   "in my shoes"
 ];
 
+// Declare index variables to track the selected item in each array.
+var partOneIndex = 0;
+var partTwoIndex = 0;
+var partThreeIndex = 0;
+var partFourIndex = 0;
+var partFiveIndex = 0;
+
+// Connect JavaScript variables to HTML elements.
+var buttonOne = document.getElementById("buttonOne");
+var buttonTwo = document.getElementById("buttonTwo");
+var buttonThree = document.getElementById("buttonThree");
+var buttonFour = document.getElementById("buttonFour");
+var buttonFive = document.getElementById("buttonFive");
+
+var listenButton = document.getElementById("listenButton");
+var randomButton = document.getElementById("randomButton");
+var resetButton = document.getElementById("resetButton");
+var storyOutput = document.getElementById("storyOutput");

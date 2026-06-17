@@ -84,3 +84,14 @@ function getNextIndex(currentIndex, arrayLength) {
 
   return currentIndex;
 }
+
+// This function joins the five selected words into one story sentence.
+function buildStory() {
+  var story = partOneWords[partOneIndex] + " " +
+    partTwoWords[partTwoIndex] + " " +
+    partThreeWords[partThreeIndex] + " " +
+    partFourWords[partFourIndex] + " " +
+    partFiveWords[partFiveIndex] + ".";
+
+  storyOutput.textContent = story;
+}
